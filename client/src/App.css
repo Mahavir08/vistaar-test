@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  margin: 1%;
+}
+
+.accountId{
+  cursor: pointer;
+}
+
+.accountId:hover {
+  text-decoration: underline;
+}

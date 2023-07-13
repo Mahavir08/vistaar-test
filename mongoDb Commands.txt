@@ -1,0 +1,10 @@
+
+
+1 . Create a mongo query to list down account ids which has made at least one transaction below the amount 5000
+
+$ db.transactions.aggregate([{$match:{transactions:{$elemMatch:{amount:{$lt:5000}}}}}, {$project:{account_id:1, _id:0 }}]);
+
+
+2. Create a mongo query to list down distinct list of products available in the system
+
+$ db.accounts.distinct("products");
