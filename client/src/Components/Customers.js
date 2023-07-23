@@ -7,6 +7,7 @@ function Customers() {
 
     const [customers, setCustomer] = useState([]);
     let count = 0;
+    let norms = 150;
 
     const navigate = useNavigate();
 
